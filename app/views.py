@@ -8,3 +8,5 @@ def usd_to_egp(request):
         'usd_to_egp': 30,
     }
     return render(request, 'app/usd-to-egp.html', context=context)
+
+# psst, yes, you'll write code here :)
