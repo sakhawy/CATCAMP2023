@@ -126,11 +126,19 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-URL = "https://www.carrefouregypt.com/mafegy/ar/packet-noodles/indomie-super-jambo-noodles-veg100g/p/478324"
-HEADERS = {
+INDOMIE_REQUEST_URL = "https://www.carrefouregypt.com/mafegy/ar/packet-noodles/indomie-super-jambo-noodles-veg100g/p/478324"
+USDEGP_REQUEST_URL = "https://api.exchangerate-api.com/v4/latest/USD"
+
+
+INDOMIE_REQUEST_HEADERS = {
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
 }
-DEFAULT_PRICE = "EGP 5.85"
+USDEGP_REQUEST_HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+}
+
+INDOMIE_REQUEST_DEFAULT_PRICE = 5.85
+USDEGP_REQUEST_DEFAULT_PRICE = 	30.57
 
 STATIC_ROOT = Path(BASE_DIR, 'static')
 
